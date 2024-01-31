@@ -162,7 +162,7 @@ header .header .header_center nav ul li.button:hover a {
 }
 
 .join_form .form form {
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
