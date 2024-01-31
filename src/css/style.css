@@ -124,7 +124,7 @@ header .header .header_center nav ul li.button:hover a {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    padding: 50px 10px 50px;
+    padding: 50px 0px 50px;
     margin-top: 70px;
     height: 100vh;
 }
