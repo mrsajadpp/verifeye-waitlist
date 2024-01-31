@@ -223,7 +223,7 @@
         const alertDanger = document.querySelector('.alert-error')
 
         // Check if the URL contains "/?whitelisted=true"
-        if (currentPageUrl.includes('/?whitelisted=true')) {
+        if (currentPageUrl.includes('/?waitlisted=true')) {
             // Your code for whitelisted URL goes here
             alertSuccess.classList.remove('hidden');
             setTimeout(() => {
@@ -232,7 +232,7 @@
         }
 
         // Check if the URL contains "/?whitelisted=true"
-        if (currentPageUrl.includes('/?whitelisted=false')) {
+        if (currentPageUrl.includes('/?waitlisted=false')) {
             // Your code for whitelisted URL goes here
             alertDanger.classList.remove('hidden');
             setTimeout(() => {
