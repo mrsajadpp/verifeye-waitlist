@@ -402,7 +402,7 @@ li i {
         display: none !important;
     }
     .toggle_btn{
-        display: block;
+        display: flex;
         position: absolute;
         right: 4rem;
     }
