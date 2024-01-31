@@ -391,7 +391,8 @@ li i {
     padding: 0.7rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 34px;
 }
 .dropdown_menu li a{
     text-decoration: none;
