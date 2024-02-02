@@ -226,6 +226,9 @@
 
         const alertDanger = document.querySelector('.alert-error')
 
+        var emailInput = document.getElementsByName('email')[0];
+        emailInput.addEventListener('input', validateEmail);
+
         // Check if the URL contains "/?whitelisted=true"
         if (currentPageUrl.includes('/?waitlisted=true')) {
             // Your code for whitelisted URL goes here
@@ -251,6 +254,22 @@
             toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
+        }
+
+        function validateEmail() {
+            var emailInput = document.getElementsByName('email')[0];
+            var email = emailInput.value;
+
+            // Regular expression for validating email format
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (emailRegex.test(email)) {
+                // Valid email format
+                emailInput.setCustomValidity('');
+            } else {
+                // Invalid email format
+                emailInput.setCustomValidity('Please enter a valid email address');
+            }
         }
     </script>
 </body>
